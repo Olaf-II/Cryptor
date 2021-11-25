@@ -1,12 +1,16 @@
+# Imports
+from cryptography.fernet import Fernet
 from colorama import Fore
 import os
 import time
+import pyperclip
 import sys
 
 sys.stdout.write("\x1b]2;Cryptor | Start a Group\x07")
 
 print(Fore.GREEN + open("./Art/art.txt", "r").read())
 
+# Get Secret & Print
 try:
     EncryptKey = open("./Tools/Secret.txt", "r").read()
     

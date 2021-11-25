@@ -48,22 +48,22 @@ Action = input(f"""{Fore.CYAN}What would you like to do?
 
 if(Action == "1"):
   clearConsole()
-  os.system('python ./Options/Encrypt.py')
+  os.system('python ./Options/encrypt.py')
 elif(Action == "2"):
   clearConsole()
-  os.system('python ./Options/Decrypt.py')
+  os.system('python ./Options/decrypt.py')
 elif(Action == "3"):
   clearConsole()
-  os.system('python ./Options/Decrypt(Clipboard).py')
+  os.system('python ./Options/clipboardDecrypt.py')
 elif(Action == "4"):
   clearConsole()
-  os.system('python ./Options/StartGroup.py')
+  os.system('python ./Options/startGroup.py')
 elif(Action == "5"):
   clearConsole()
-  os.system('python ./Options/CreateUser.py')
+  os.system('python ./Options/createUser.py')
 elif(Action == "6"):
   clearConsole()
-  os.system('python ./Options/SetSecret.py')
+  os.system('python ./Options/resetSecret.py')
 elif(Action == "7"):
   clearConsole()
   webbrowser.open("https://discord.gg/NcdwKWrA5C", new=1)
