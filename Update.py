@@ -8,8 +8,8 @@ from git import RemoteProgress
 def finished():
     input(f"{Fore.GREEN}Update Complete \n{Fore.RED}Drag all contents from the new Update folder into your Cryptor directory.\nAfter you have done this\n{Fore.LIGHTBLACK_EX}Press Enter To Continue")
     try:
-        os.system('python ./Start.py')
         shutil.rmtree('./Update')
+        os.system('python ./Start.py')
     except:
         print("You have not moved contents from the Update folder to your local directory.")
         finished()
